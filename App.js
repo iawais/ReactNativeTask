@@ -36,7 +36,7 @@ function InputForm() {
   const[title,setTitle] = useState('');
   const[commitmentId,setCommiD] = useState('');
   const[companyName,setcompanyName] = useState('');
-  const[locationName,setlocation] = useState('');
+  const[locationNames,setlocation] = useState('');
   const[userEmail,setEmail] = useState('');
   const[description,setDesc] = useState('');
   const[applyUrl,setUrl] = useState('');
@@ -49,7 +49,7 @@ function InputForm() {
            title: title,
            commitmentId: commitmentId,
            companyName: companyName,
-           locationName: locationName,
+           locationNames: locationNames,
            userEmail: userEmail,
            description: description,
            applyUrl: applyUrl,
@@ -116,7 +116,7 @@ function InputForm() {
         style = {styles.inputfield}
         placeholder = "e.g. Lahore"
         onChangeText = {(val)=>setlocation(val)}
-        value={locationName}
+        value={locationNames}
       />
 
       <Text style = {styles.heading}  >Enter User Email:</Text>
